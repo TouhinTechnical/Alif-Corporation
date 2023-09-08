@@ -48,6 +48,9 @@ a{
 .bg-white{
     background: #fdfdfd;
 }
+.bg-Mystic{
+    background: #EBF1F2;
+}
 /* text-color */
 .text-white{
     color: #fff;
@@ -70,6 +73,9 @@ a{
 }
 .mb-57{
     margin-bottom: 57px;
+}
+.mr-30{
+    margin-right: 30px;
 }
 .mr-37{
     margin-right: 37px;
@@ -304,3 +310,56 @@ a{
     color: #fc4664;
 }
 /* About Part End */
+
+/* Service Part Start */
+.serviceImg{
+    position: relative;
+    box-shadow: 0 0 60px 0 rgba(9, 194, 250, 0.329);    
+}
+.serviceImg:before {
+    position: absolute;
+    content: '';
+    background: #3a3a3a;
+    width: 100%;
+    height: 98%;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .8s ease-in-out;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -ms-transition: .8s ease-in-out;
+    -o-transition: .8s ease-in-out;
+}
+.serviceOverlay {
+    position: absolute;
+    top: -40%;
+    padding: 0 85px;
+    visibility: hidden;
+    text-align: center;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -ms-transition: .8s ease;
+    -o-transition: .8s ease;
+}
+.serviceImg:hover:before{
+    top: 0;
+    opacity: .5;
+    visibility: visible;
+}
+.serviceImg:hover .serviceOverlay{
+    top: 40%;
+    visibility: visible;
+}
+.serviceOverlayIcon {
+    font-size: 30px;
+}
+.serviceOverlayText {
+    color: white;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+/* Service Part End */
