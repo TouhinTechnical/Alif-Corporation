@@ -61,8 +61,8 @@ a{
 .bg-JungleMist{
     background: #c1d4d7;
 }
-.bg-1{
-    background: #e9f0f1;
+.bg-AquaHaze{
+    background: #f0f5f6;
 }
 /* text-color */
 .text-white{
@@ -86,6 +86,9 @@ a{
 }
 .mb-57{
     margin-bottom: 57px;
+}
+.mb-75{
+    margin-bottom: 75px;
 }
 .mb-80{
     margin-bottom: 80px;
@@ -439,3 +442,44 @@ a{
     text-transform: capitalize;
 }
 /* ChooseUs Part End */
+
+/* Client say Part Start */
+.clientCommentArea {
+    width: 707px;
+    border: 2px solid #161616;
+    border-radius: 5px;
+    background: #f3f7f7;
+    margin: 0 auto;
+    padding: 37px 33px 37px 42px;
+}
+.clientCommentProfile {
+    display: flex;
+    align-items: center;
+}
+.clientProfileImg img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+}
+.clientUser{
+    margin-left: 23px;
+}
+.clientUserName {
+    font-size: 18px;
+    letter-spacing: 1.12px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.clientProfession {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.87px;
+    color: #888;
+}
+.clientCommnetText {
+    font-size: 16px;
+    letter-spacing: .99px;
+    line-height: 31px;
+    text-transform: capitalize;
+    margin-top: 25px;
+}
+/* Client say Part End */
