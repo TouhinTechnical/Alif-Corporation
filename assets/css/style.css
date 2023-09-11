@@ -22,6 +22,10 @@ font-family: 'Roboto', sans-serif; */
     flex: 0 0 16.66%;
     max-width: 16.66%;
 }
+.col-4{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
 .col-6{
     flex: 0 0 50%;
     max-width: 50%;
@@ -50,6 +54,12 @@ a{
 }
 .bg-Mystic{
     background: #EBF1F2;
+}
+.bg-Geyser{
+    background: #CBDCDF;
+}
+.bg-JungleMist{
+    background: #c1d4d7;
 }
 /* text-color */
 .text-white{
@@ -86,6 +96,9 @@ a{
 }
 .ptb-20{
     padding: 20px 0;
+}
+.ptb-55{
+    padding: 55px 0;
 }
 .ptb-80{
     padding: 80px 0;
@@ -314,7 +327,12 @@ a{
 /* Service Part Start */
 .serviceImg{
     position: relative;
-    box-shadow: 0 0 60px 0 rgba(9, 194, 250, 0.329);    
+    box-shadow: 0 0 60px 0 rgba(9, 194, 250, 0.329);
+    height: 100%;   
+}
+.serviceImg img{
+    width: 100%;
+    height: 100%;
 }
 .serviceImg:before {
     position: absolute;
@@ -363,3 +381,20 @@ a{
     letter-spacing: 1.2px;
 }
 /* Service Part End */
+
+/* Project Count Part Start */
+.countArea {
+    padding: 0 120px;
+}
+.countNumber {
+    font-size: 42px;
+    letter-spacing: 3.02px;
+}
+.countTitle {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.58px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+/* Project Count Part End */
