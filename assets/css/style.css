@@ -174,10 +174,50 @@ a{
     letter-spacing: 0.99px;
     text-transform: capitalize;
 }
+.scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    z-index: 9999;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+}
 /* Repeat Css End */
 
 /* Header Part Start */
 
+/* StickyMenu */
+.main_menuArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1347px;
+    z-index: 100;
+}
+.main_menuArea.sticky{
+    position: fixed;
+    animation: headerMenu .5s ease;
+    -webkit-animation: headerMenu .5s ease;
+}
+@keyframes headerMenu{
+    0%{
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
 /* Menu_Area */
 .contactNumber {
     text-transform: capitalize;
@@ -611,6 +651,7 @@ a{
 }
 .socialIcon {
     margin-top: 54px;
+    cursor: pointer;
 }
 .address1 {
     display: flex;
@@ -630,7 +671,6 @@ a{
     transform: rotate(180deg);
     font-size: 18px;
 }
-
 /* Footer Menu Area Start */
 .footerMenuSection {
     padding: 34px 0;

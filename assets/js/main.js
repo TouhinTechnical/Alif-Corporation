@@ -1,3 +1,26 @@
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $(window).scrollTop() > 300 ? $(".scrollTop").css({
+            opacity: "1",
+            "pointer-events": "auto"
+        }) : $(".scrollTop").css({
+            opacity: "0",
+            "pointer-events": "none"
+        })
+    }),
+    $(".scrollTop").click(function() {
+        $("html").animate({
+            scrollTop: 0
+        }, 500)
+    })
+}),
+$(document).ready(function() {
+    var o = $(".main_menuArea").outerHeight()
+      , e = $(".main_menuArea").offset().top + o;
+    $(window).scroll(function() {
+        $(window).width() > 991 && ($(window).scrollTop() >= e ? $(".main_menuArea").addClass("sticky") : $(".main_menuArea").removeClass("sticky"))
+    })
+}),
 $('.owl-carousel').owlCarousel({
     loop:true,
     nav:true,
