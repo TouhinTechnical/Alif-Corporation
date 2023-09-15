@@ -1,3 +1,4 @@
+// Scroll Top Buttom
 $(document).ready(function() {
     $(window).scroll(function() {
         $(window).scrollTop() > 300 ? $(".scrollTop").css({
@@ -14,6 +15,7 @@ $(document).ready(function() {
         }, 500)
     })
 }),
+// Sticky Menu
 $(document).ready(function() {
     var o = $(".main_menuArea").outerHeight()
       , e = $(".main_menuArea").offset().top + o;
@@ -21,6 +23,7 @@ $(document).ready(function() {
         $(window).width() > 991 && ($(window).scrollTop() >= e ? $(".main_menuArea").addClass("sticky") : $(".main_menuArea").removeClass("sticky"))
     })
 }),
+// Slider Plugin
 $('.owl-carousel').owlCarousel({
     loop:true,
     nav:true,

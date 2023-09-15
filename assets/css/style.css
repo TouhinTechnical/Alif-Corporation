@@ -193,7 +193,7 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 1347px;
+    width: 99.86%;
     z-index: 100;
 }
 .main_menuArea.sticky{
@@ -217,6 +217,68 @@ a{
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
     }
+}
+/* Moblie Menu */
+#openSidebarMenu {
+	display: none;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle {
+	display: none;
+}
+#openSidebarMenu:checked ~ .menuArea{
+    transform: translateX(0);
+}
+.sidebarIconToggle,
+.sidebarIconCloseToggle {
+	position: absolute;
+	top: 35px;
+	left: 120px;
+	cursor: pointer;
+	z-index: 20;
+	width: 40px;
+	height: 35px;
+	background: -webkit-gradient(linear, left top, right top, from(#00a7d5), to(#00ded8));
+	border-radius: 5px;
+	padding: 9px 10px;
+    display: none;
+}
+#openSidebarMenu:checked ~ .sidebarIconCloseToggle {
+	display: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 10px;
+}
+#openSidebarMenu:checked ~ .sidebarIconCloseToggle > .sppiner.top {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	margin-top: 16px;
+}
+#openSidebarMenu:checked ~ .sidebarIconCloseToggle > .sppiner.bottom {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	margin-top: -12px;
+}
+#openSidebarMenu:checked ~ .sidebarIconCloseToggle > .sppiner.middle {
+	opacity: 0;
+}
+.sidebarIconCloseToggle {
+	left: 180px;
+}
+.sppiner {
+	height: 4px;
+	background: #fff;
+	margin-top: 6px;
+}
+.sppiner.middle,
+.sppiner.bottom {
+	margin-top: 5px;
 }
 /* Menu_Area */
 .contactNumber {
