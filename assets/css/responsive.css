@@ -4,6 +4,10 @@
     .container{
         max-width: 950px;
     }
+    .brandArea .col-2 {
+        flex: 0 0 23.66%;
+        max-width: 23.66%;
+    }
     /* Header Part Start */
     .menuUl .mr-37 {
         margin-right: 30px;
@@ -18,6 +22,10 @@
     .sliderTittle.mb-24 {
         margin-bottom: 16px;
     }
+    .brand6, .brand7, .brand8 {
+        margin-top: 40px;
+    }
+
 }
 /* Tablet Device */
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -30,7 +38,7 @@
     }
     .menuArea {
         position: fixed;
-        top: 130px;
+        top: 92px;
         left: 0;
         height: 100%;
         background: #fff;
@@ -46,7 +54,11 @@
         -moz-transition: transform 250ms ease-in-out;
         -ms-transition: transform 250ms ease-in-out;
         -o-transition: transform 250ms ease-in-out;
-}
+    }
+    .logo {
+        width: 43px;
+        height: 50px;
+    }
     .sidebarIconToggle{
         display: block;
     }
@@ -54,8 +66,7 @@
         display: block;
     }
     .sidebarIconCloseToggle {
-        left: 250px;
-        top: 92px;
+        top: 15px;
     }
     .menuArea .menuUl{
         display: inline-block;
@@ -117,12 +128,15 @@
     .clientCommentArea {
         width: 640px;
     }
-    .brand1, 
-    .brand2, 
-    .brand3, 
-    .brand4, 
-    .brand6 {
-        margin: 0 36px 0 0;
+    .brandArea .col-2 {
+        flex: 0 0 30.34%;
+        max-width: 30.34%;
+    }
+    .brand4, .brand5 {
+        margin-top: 30px;
+    }
+    .brand6, .brand7, .brand8 {
+        margin-top: 40px;
     }
     .newsletterContent {
         width: 690px;
@@ -165,7 +179,7 @@
     }
     .menuArea {
         position: fixed;
-        top: 130px;
+        top: 92px;
         left: 0;
         height: 100%;
         background: #fff;
@@ -182,19 +196,22 @@
         -ms-transition: transform 250ms ease-in-out;
         -o-transition: transform 250ms ease-in-out;
     }
+    .logo {
+        width: 43px;
+        height: 50px;
+    }
     .sidebarIconToggle{
         display: block;
     }
-    .sidebarIconToggle,
+    /* .sidebarIconToggle,
     .sidebarIconCloseToggle {
-        left: 16px;
-    }
+        left: 0px;
+    } */
     #openSidebarMenu:checked ~ .sidebarIconCloseToggle {
         display: block;
     }
     .sidebarIconCloseToggle {
-        left: 250px;
-        top: 92px;
+        top: 15px;
     }
     .menuArea .menuUl{
         display: inline-block;
@@ -280,16 +297,16 @@
         width: 340px;
     }
     /* Brand */
-    .brands {
-        text-align: center;
+    .brandArea .col-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
-    .brand1,
-    .brand2,
-    .brand3,
-    .brand4,
-    .brand5,
-    .brand6 {
-        margin: 0 45px 40px 0;
+    .brand6{
+        margin-top: 40px;
+        margin-left: 162px;
+    }
+    .brand3,.brand4,.brand5,.brand7, .brand8 {
+        margin-top: 40px;
     }
     /* Newsletter */
     .newsletterContent {
@@ -346,7 +363,7 @@
     }
     .menuArea {
         position: fixed;
-        top: 130px;
+        top: 92px;
         left: 0;
         height: 100%;
         background: #fff;
@@ -363,19 +380,18 @@
         -ms-transition: transform 250ms ease-in-out;
         -o-transition: transform 250ms ease-in-out;
     }
+    .logo {
+        width: 43px;
+        height: 50px;
+    }
     .sidebarIconToggle{
         display: block;
-    }
-    .sidebarIconToggle,
-    .sidebarIconCloseToggle {
-        left: 20px;
     }
     #openSidebarMenu:checked ~ .sidebarIconCloseToggle {
         display: block;
     }
     .sidebarIconCloseToggle {
-        left: 250px;
-        top: 92px;
+        top: 15px;
     }
     .menuArea .menuUl{
         display: inline-block;
@@ -414,6 +430,12 @@
         transform: rotate(270deg);
         right: auto;
     }
+    .owl-nav {
+        display: none;
+    }
+    /* .owl-dots {
+        display: none;
+    } */
     /* About */
     .headingPart {
         width: 290px;
@@ -458,6 +480,17 @@
         padding: 0 0px;
         margin-bottom: 30px;
     }
+    .brandArea .col-2,
+    .brandArea .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .brandBox {
+        text-align: center;
+    }
+    .brand6, .brand7, .brand8 {
+        margin-top: 40px;
+    }
     /* Choose */
     .chooseImg img {
         width: 290px;
@@ -498,6 +531,9 @@
     .footerRightSide.ml-50 {
         margin-left: 0;
         margin-top: 30px;
+    }
+    .address1 {
+        flex-wrap: wrap;
     }
     .footerMenuSection .row{
         flex-direction: column-reverse;

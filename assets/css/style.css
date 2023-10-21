@@ -21,6 +21,10 @@
     flex: 0 0 16.66%;
     max-width: 16.66%;
 }
+.col-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
 .col-4{
     flex: 0 0 33.33%;
     max-width: 33.33%;
@@ -80,6 +84,9 @@ a{
 }
 .text-MineShaft{
     color: #3a3a3a;
+}
+.text-RadicalRed{
+    color: #fc4664;
 }
 /* margin */
 .mt-15{
@@ -186,6 +193,8 @@ a{
 }
 /* Repeat Css End */
 
+/* ================ Home Page =============== */
+
 /* Header Part Start */
 
 /* StickyMenu */
@@ -231,13 +240,11 @@ a{
 .sidebarIconToggle,
 .sidebarIconCloseToggle {
 	position: absolute;
-	top: 35px;
-	left: 120px;
+	top: 20px;
 	cursor: pointer;
 	z-index: 20;
 	width: 40px;
 	height: 35px;
-	background: -webkit-gradient(linear, left top, right top, from(#00a7d5), to(#00ded8));
 	border-radius: 5px;
 	padding: 9px 10px;
     display: none;
@@ -263,18 +270,18 @@ a{
 	-moz-transform: rotate(-135deg);
 	-ms-transform: rotate(-135deg);
 	-o-transform: rotate(-135deg);
-	margin-top: -12px;
+	margin-top: -18px;
 }
 #openSidebarMenu:checked ~ .sidebarIconCloseToggle > .sppiner.middle {
 	opacity: 0;
 }
-.sidebarIconCloseToggle {
+/* .sidebarIconCloseToggle {
 	left: 180px;
-}
+} */
 .sppiner {
-	height: 4px;
-	background: #fff;
-	margin-top: 6px;
+    height: 7px;
+    border-radius: 5px;
+    background: #464646;
 }
 .sppiner.middle,
 .sppiner.bottom {
@@ -385,7 +392,7 @@ a{
     text-align: center;
     line-height: 28px;
     color: #fdf9f9;
-    background: #e9559d;
+    background: #8b8588;
 }
 .owl-dots {
     position: absolute;
@@ -398,7 +405,7 @@ a{
     margin: 0 15% 1rem 15%;
 }
 .owl-carousel button.owl-dot {
-    background: #fc4664;
+    background: #fff;
 }
 .owl-dots .owl-dot{
     width: 68px;
@@ -533,6 +540,11 @@ a{
 .countNumber {
     font-size: 42px;
     letter-spacing: 3.02px;
+    display: inline-block;
+}
+.countPlus{
+    font-size: 42px;
+    font-weight: bold;
 }
 .countTitle {
     font-size: 22px;
@@ -614,26 +626,17 @@ a{
 /* Client say Part End */
 
 /* Brand Part Start */
-.brand1 {
-    margin-right: 63px;
+.brandArea .row {
+    flex-wrap: wrap;
+    align-items: center;
 }
-.brand2 {
-    margin-right: 31px;
+.brandBox{
+    text-align: center;
 }
-.brand3 {
-    margin-right: 67px;
-}
-.brand4 {
-    margin-right: 67px;
-}
-.brand6 {
-    margin: 52px 46px 0 0;
-}
-.brand7 {
-    margin: 31px 41px 0 0;
-}
+.brand6,
+.brand7,
 .brand8 {
-    margin-top: 68px;
+    margin-top: 85px;
 }
 /* Brand Part End */
 
@@ -756,3 +759,112 @@ a{
 /* Footer Menu Area End */
 
 /* Footer Area End */
+
+/* ================ About Page =============== */
+/* Banner Part */
+.about_banner{
+    background: linear-gradient(rgba(52, 52, 52, 0.801), rgba(74, 116, 123, 0.801)), url(../img/about_banner.jpg) no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+}
+.bannerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    text-align: center;
+}
+.bannerHeadingTitle {
+    font-size: 56px;
+    line-height: 85px;
+    text-transform: capitalize;
+    margin: 18px 0;
+}
+.braudcumb {
+    display: inline-flex;
+}
+.braudcambItem,
+.braudcambItem a {
+    text-transform: capitalize;
+}
+.braudcambItem.fw-bold {
+    margin: 0 5px;
+}
+/* Journey */
+.journeyTextContentPara{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 30px 0;
+    font-weight: 700;
+}
+.journeyTextContentPara,
+.journeyTextContentPara2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.87px;
+    text-transform: capitalize;
+    color: #3a3a3a;
+}
+.journeyRightImg {
+    position: relative;
+}
+.journeyTextContent {
+    width: 442px;
+}
+.journeyImg2 {
+    position: absolute;
+    top: 57px;
+    right: 35px;
+}
+.journeyImg3 {
+    position: absolute;
+    top: 220px;
+    left: 80px;
+}
+.journeyImg4 {
+    position: absolute;
+    top: 380px;
+    right: 37px;
+    z-index: -1;
+    width: 239px;
+    height: 320px;
+}
+.journeyImg5 {
+    position: absolute;
+    top: 440px;
+    left: 0;
+    z-index: -1;
+    width: 260px;
+    height: 285px;
+}
+/* Mission */
+.missionImg{
+    position: relative;
+}
+.missionimg {
+    width: 334px;
+    height: 420px;
+    box-shadow: -16px 12px 19px #4F979742;
+}
+.missionimg2 {
+    position: absolute;
+    top: 35.3%;
+    right: 32%;
+}
+.missionTextContent p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: capitalize;
+    letter-spacing: 0.87px;
+    color: #3a3a3a;
+}
+.journeyVideoSection {
+    margin: 0 auto;
+}

@@ -23,6 +23,12 @@ $(document).ready(function() {
         $(window).width() > 991 && ($(window).scrollTop() >= e ? $(".main_menuArea").addClass("sticky") : $(".main_menuArea").removeClass("sticky"))
     })
 }),
+// Counter
+$(document).ready(function(){
+    $('.countNumber').rCounter({
+        duration: 30
+    });
+}),
 // Slider Plugin
 $('.owl-carousel').owlCarousel({
     loop:true,
